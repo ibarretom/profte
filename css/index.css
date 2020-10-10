@@ -4,35 +4,18 @@
     font-family: "Ubuntu" ,Helvetica, sans-serif;
     box-sizing: border-box;
 }
-a{
-    color: black;
-}
-a:hover{
-    color: coral;
-}
-.banner a{
-    color: white;
-    text-decoration: none;
-}
-.banner a:hover{
-    color: coral;
-}
 
 /*Header css */
 .header-container{
     margin: 0 auto;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1220px;
+    max-width: 90%;
     height: 80px;
 }
 
 .account-cart-lang{
     margin:8px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -45,35 +28,29 @@ a:hover{
     background: url("../imagens/search-24px.svg") no-repeat right center;
 }
 
-.minha-conta{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .contador-items{
     color: white;
     background-color: #2EC4B6;
     width: 24px;
     height: 24px;
     border-radius: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
-
+.bandeira{
+    margin:8px;
+}
 /*Banner css */
 
 .banner-container{
     background: #011627 url("../imagens/Banner.png") no-repeat right;
     background-size: 50% 100%;
-    height: 430px;
-
+    height: 430px; 
+    position: relative;
 }
 
 .banner{
-    width: 1220px;
+    width: 90%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -81,37 +58,42 @@ a:hover{
 }
 
 .navigate-left-next-text{
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    color: black;
 }
-
+.navigate-left-next-text .arrow-banner{
+    color: white;
+}
+.navigate-left-next-text i:hover{
+    color:  #FF9F1C;
+    cursor: pointer;
+}
 .texto-banner{
-    width: 350px;
+    width: 80%;
     margin-left: 0;
     color: white;
 }
 
 .dots{
     display: flex;
-    align-items: flex-end;
-    justify-content: start;
+    position: absolute;
+    left: 44%;
+    bottom: 4px;
 
 }
 .dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
     font-size: 8px;
     margin: 7px 12px;
     text-align: center;
-    text-justify: distribute;
     background-color: white;
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-    
 }
 
-.dot:hover, .dot:active{
-    background-color: coral;
+.dot:hover, .dot:active, .primeiro{
+    background-color:  #FF9F1C;
+    cursor: pointer;
 }
 /*CSS Prateleira*/
 .produtos-container{
@@ -120,8 +102,8 @@ a:hover{
 
 .headline{
     margin: 0 auto;
-    padding: 0 48px;
-    width: 1220px;
+    padding: 0 7.5%;
+    width: 90%;
 
 }
 
@@ -133,7 +115,7 @@ a:hover{
 }
 
 .prateleira{
-    width: 1220px;
+    width: 90%;
     height: 100%;
     margin: auto;
     padding: 0 48px;
@@ -142,8 +124,6 @@ a:hover{
 }
 
 .sapatos{
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -174,14 +154,11 @@ a:hover{
     display: inline-block;
 }
 
-.like:hover{
+.like:hover, .like-fill{
     color: #FF9F1C;
     cursor: pointer;
 }
 
-.like .like-fill{
-    color: #FF9F1C;
-}
 
 .preco-anterior{
     font-size: 12px;
@@ -203,34 +180,32 @@ a:hover{
 
 .parcelamento{
     margin-top: 4px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
-    line-height: 13px;
     color: #7A7A7A;
+}
+.botao{
+    color: white;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: none;  
+    cursor: pointer;
 }
 
 .botao-container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-weight: 500;
 }
 .botao-comprar{
     color:white;
     display: none;
     width: 125.28px;
     height: 32.42px;
-    margin-top: 8px;    
     background: #2EC4B6;
-    border: none;
-    border-radius: 5px;
-    box-shadow: none;
 }
 
-.botao-comprar:hover{
-    cursor: pointer;
-}
 .item:hover .botao-comprar{
     display: flex;
     justify-content: space-evenly;
@@ -252,40 +227,35 @@ a:hover{
 }
 
 .informacoes-container{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 16px;
-}
-.endereco{
-    margin: 0 48px;
 }
 .endereco p,.endereco h4{
     margin-top: 4px;
 }
 
+.contato{
+    justify-content: flex-start;
+    margin-top:12px;
+}
+
 .button-contato, .button-contato:hover{
     width: 195px;
     height: 38px;
-    color: white;
     background: #FF9F1C;
-    border-radius: 5px;
     align-self: flex-start;
-    border: none;
-    border-radius: 5px;
-    box-shadow: none;
-    cursor: pointer;
+    font-size: 11.82px;
 }
 
 .parceiros{
     display: flex;
-    align-items: flex-start;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    font-size: 10.6px;
 }
-
-p .parceiros{
-    font-size: 10,6px
+.created{
+    margin-bottom:4px;
 }
-
 /*CSS FLAG*/
 
 .flag{
