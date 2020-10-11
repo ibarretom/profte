@@ -1,0 +1,67 @@
+@media (max-width: 1100px){
+
+    .header{
+        width: 100%;
+    }
+    .account-cart-lang{
+        margin:0 4px;
+    }
+    .bandeira{
+        margin: 0 4px;
+    }
+    .item{
+        width: 190px;
+    }
+    .caixa-pesquisa{
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 850px){
+    .prateleira{
+        padding:0 12px;
+    }
+    .caixa-pesquisa{
+        min-width: 450px;
+    }
+    #search{
+        order: 1;
+    }
+
+}
+@media (max-width: 600px) 
+{
+    #conta, #idiomas, #separador{
+        display:none;
+    }
+    .header-container div:nth-child(3){
+        flex-wrap: wrap-reverse;
+    }
+    .banner-container{
+        background-size: cover;
+    }
+    .hamburguer-menu{
+        display: flex;
+        align-items: center;
+    }
+    .caixa-pesquisa{
+        min-width: 350px;
+    }
+    .contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: inherit;
+
+    }
+    .botao-contato{
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) 
+{   
+    .caixa-pesquisa{
+        min-width: 250px;
+    }
+}

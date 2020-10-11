@@ -6,12 +6,15 @@
 }
 
 /*Header css */
-.header-container{
+.header{
     margin: 0 auto;
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 90%;
     height: 80px;
+}
+.hamburguer-menu{
+    display:none;
 }
 
 .account-cart-lang{
@@ -50,50 +53,17 @@
 }
 
 .banner{
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin: auto;
-    display: flex;
     justify-content: space-between;
 }
 
-.navigate-left-next-text{
-    justify-content: space-evenly;
-    color: black;
-}
-.navigate-left-next-text .arrow-banner{
-    color: white;
-}
-.navigate-left-next-text i:hover{
-    color:  #FF9F1C;
-    cursor: pointer;
-}
 .texto-banner{
     width: 80%;
     margin-left: 0;
     color: white;
-}
-
-.dots{
-    display: flex;
-    position: absolute;
-    left: 44%;
-    bottom: 4px;
-
-}
-.dot{
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    font-size: 8px;
-    margin: 7px 12px;
-    text-align: center;
-    background-color: white;
-}
-
-.dot:hover, .dot:active, .primeiro{
-    background-color:  #FF9F1C;
-    cursor: pointer;
+    align-self: center;
 }
 /*CSS Prateleira*/
 .produtos-container{
@@ -104,7 +74,6 @@
     margin: 0 auto;
     padding: 0 7.5%;
     width: 90%;
-
 }
 
 .prateleira-container{
@@ -120,15 +89,17 @@
     margin: auto;
     padding: 0 48px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .sapatos{
-    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .item{
-    width: 216px;
+    max-width: 216px;
     height: 353px;
     position: relative;
 }
@@ -137,7 +108,12 @@
     background: #F2F2F2;
     border: 1.44041px solid #F2F2F2;
 }
-
+.item:hover .botao-comprar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
 
 .descricao-produto{
     margin-top: 25px;
@@ -145,10 +121,16 @@
 }
 
 .imagem-vitrine{
-    margin: 0 18px;
+    margin: 0 auto;
     margin-top: 29px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
 }
-
+.imagem-vitrine img{
+    height: 100%;
+}
 .like{
     color: white;
     display: inline-block;
@@ -190,6 +172,7 @@
     border-radius: 5px;
     border-radius: 5px;
     box-shadow: none;  
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -206,12 +189,6 @@
     background: #2EC4B6;
 }
 
-.item:hover .botao-comprar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
 .borda{
     border: 1px solid;
 }
@@ -220,7 +197,6 @@
 /*Css Rodapé*/
 
 .rodape-container{
-    height: 213px;
     padding-top: 25px;
     background: #011627;
     color: white;
@@ -228,7 +204,12 @@
 
 .informacoes-container{
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 16px;
+}
+.endereco{
+    display: flex;
+    margin-right:4px;
 }
 .endereco p,.endereco h4{
     margin-top: 4px;
@@ -243,8 +224,8 @@
     width: 195px;
     height: 38px;
     background: #FF9F1C;
-    align-self: flex-start;
     font-size: 11.82px;
+    
 }
 
 .parceiros{
@@ -252,16 +233,19 @@
     align-self: flex-end;
     justify-content: space-evenly;
     font-size: 10.6px;
+    margin-top: 12px;
 }
 .created{
     margin-bottom:4px;
 }
+
+.detalhe{
+    margin-top: 4px;
+    height: 12px;
+    background-color: #2EC4B6;
+}
 /*CSS FLAG*/
 
-.flag{
-    width: 81px;
-    height: 72.04px;
-    background: transparent url("./../imagens/Flag.png");
-    position: absolute;
-    right: 0px;
+.flag,.item:hover.flag{
+    background: transparent url("./../imagens/Flag.png") no-repeat top right;
 }
