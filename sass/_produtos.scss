@@ -1,0 +1,42 @@
+.produtos-headline-container{
+    margin-top: $margin-between-containers;
+}
+
+.prateleira-container{
+    width: $widht-prateleira-container;
+    height: $height-prateleira-container;
+    margin-top: $margin-between-containers;
+    margin-bottom: 35px;
+}
+
+.prateleira{
+    width: $widht-parteleira;
+    height: 100%;
+    margin: auto;
+    padding: 0 48px;
+    @include mix-flex(unset, space-between, norwrap, 0);
+}
+
+.sapatos{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.item{
+    width: $widht-items;
+    height: $height-items;
+    position: relative;
+
+    &:hover{
+        background: $item-hover-color;
+        border: $border-items-size solid item-hover-color;
+    }
+    &:hover .botao-comprar{
+        display: flex;
+    }
+    &:hover.flag{
+        background: transparent url("./../imagens/Flag.png") no-repeat top right;
+    }
+}
+

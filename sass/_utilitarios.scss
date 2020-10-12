@@ -1,0 +1,43 @@
+.headline{
+    margin: 0 auto;
+    padding: 0 7.5%;
+    width: 90%;
+}
+.botao-container{
+   @include mix-flex(center, space-evenly, nowrap,0);
+}
+.botao{
+    color: $color-neutro;
+    margin-top: 8px;
+    border: none;
+    border-radius: $button-radius;
+    box-shadow: none;  
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botao-comprar{
+    @include mix-flex(center, space-evenly, nowrap,0);
+    display: none;
+    width: 125.28px;
+    height: 32.42px;
+    background: $secondary-color;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button-contato, .button-contato:hover{
+    width: $widht-contact-button;
+    height: $height-contact-button;
+    background: $primary-color;
+    font-weight: 500;
+    font-size: 11.82px;
+
+    p{
+        width: 120px;
+    }
+}
+
+.flag{
+    background: transparent url("./../imagens/Flag.png") no-repeat top right;
+}

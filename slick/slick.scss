@@ -2,7 +2,7 @@
 
 .slick-slider {
     position: relative;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -43,7 +43,8 @@
     position: relative;
     left: 0;
     top: 0;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 

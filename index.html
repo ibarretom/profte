@@ -4,9 +4,7 @@
 <head>
     
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsivo.css" />
-    <link rel="stylesheet" type="text/css" href="css/flex.css" />
+    <link rel="stylesheet" type="text/css" href="sass/main.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -25,7 +23,7 @@
     <!--Menu de navegação -->
     <div class='header-container'>
 
-        <div class='header flex-center-items'>
+        <div class='header'>
             <div class="hamburguer-menu">
                 <i class="material-icons">menu</i>
             </div>
@@ -39,18 +37,18 @@
             </div>
             
             <!--Essa div engloba a minha conta, o carrinho e os idiomas-->
-            <div class='account-cart-lang flex-center-items'>
+            <div class='account-cart-lang'>
             
-                <div id="conta" class="minha-conta flex-center-items">
+                <div id="conta" class="minha-conta">
                     <i class="material-icons">account_circle</i>
                     <span>
                         <p>Minha conta</p>
                     </span>
                 </div>
 
-                <div id="cart" class="account-cart-lang flex-center-items cart">
+                <div id="cart" class="account-cart-lang cart">
                     <i class="material-icons">shopping_cart</i>
-                    <div class='contador-items flex-center-items'><p>8</p></div>
+                    <div class='contador-items'><p>8</p></div>
                 </div>
 
                 <div id="separador" class="account-cart-lang">
@@ -68,24 +66,24 @@
 
     
     <div class="banner-container">
-        <div class='banner flex-center-items'>
+        <div class='banner'>
             <div class="texto-banner">
                 <h1>Nossa especialidade: <br> experiencia de compra</h1>
                 <img src="imagens/hline.svg" />
             </div>
             <div class="texto-banner">
-                <h1>Nossa especialidade: <br> experiencia de compra2</h1>
+                <h1>Uma das 20 melhores <br> em implemetação VTex</h1>
                 <img src="imagens/hline.svg" />
             </div>
             <div class="texto-banner">
-                <h1>Nossa especialidade: <br> experiencia de compra3</h1>
+                <h1>Parceiros oficiais do Google</h1>
                 <img src="imagens/hline.svg" />
             </div>
 
         </div>
     </div>
 
-    <div class="produtos-container ">
+    <div class="produtos-headline-container">
         <div>
             <div class="headline">
                 <h1>Produtos</h1>
@@ -134,7 +132,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container">
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -180,7 +178,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container">
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -226,7 +224,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container">
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -238,12 +236,12 @@
 
                 <div id="i4" class="item flag"><!--Começo do item-->
                     <div class="imagem-vitrine">
-                        <img src="./imagens/sapato.png" alt="">
+                        <img src="./imagens/sapato2.png" alt="">
                     </div>
-                    <div class="descricao ">
+                    <div class="descricao">
                         <div class="descricao-produto">
                             <h5 class="titulo-produto">
-                                TÊNIS COURO PUMA R698 Q4 V2
+                                TÊNIS COURO NIKE
                             </h5>
                             <div class="like">
                                 <i class="material-icons like-fill">grade</i>
@@ -262,7 +260,7 @@
                             </div>
 
                             <div>
-                                <p class='preco-anterior'>de R$XX,XXXX</p>
+                                <p class='preco-anterior'>de R$499,99</p>
                             </div>
 
                             <h4 class='preco-atual'>
@@ -272,7 +270,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container">
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -284,12 +282,12 @@
 
                 <div id="i5" class="item flag"><!--Começo do item-->
                     <div class="imagem-vitrine">
-                        <img src="./imagens/sapato.png" alt="">
+                        <img src="./imagens/sapato2.png" alt="">
                     </div>
                     <div class="descricao ">
                         <div class="descricao-produto">
                             <h5 class="titulo-produto">
-                                TÊNIS COURO PUMA R698 Q4 V2
+                                TÊNIS COURO NIKE
                             </h5>
                             <div class="like">
                                 <i class="material-icons like-fill">grade</i>
@@ -308,7 +306,7 @@
                             </div>
 
                             <div>
-                                <p class='preco-anterior'>de R$XX,XXXX</p>
+                                <p class='preco-anterior'>de R$499,99</p>
                             </div>
 
                             <h4 class='preco-atual'>
@@ -318,7 +316,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container">
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -335,7 +333,7 @@
                     <div class="descricao ">
                         <div class="descricao-produto">
                             <h5 class="titulo-produto">
-                                TÊNIS COURO PUMA R698 Q4 V2
+                                TÊNIS COURO PUMA
                             </h5>
                             <div class="like">
                                 <i class="material-icons like-fill">grade</i>
@@ -354,7 +352,7 @@
                             </div>
 
                             <div>
-                                <p class='preco-anterior'>de R$XX,XXXX</p>
+                                <p class='preco-anterior'>de R$499,99</p>
                             </div>
 
                             <h4 class='preco-atual'>
@@ -364,7 +362,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container">
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -376,7 +374,7 @@
 
                 <div id="i7" class="item "><!--Começo do item-->
                     <div class="imagem-vitrine">
-                        <img src="./imagens/sapato.png" alt="">
+                        <img src="./imagens/sapato2.png" alt="">
                     </div>
                     <div class="descricao ">
                         <div class="descricao-produto">
@@ -400,7 +398,7 @@
                             </div>
 
                             <div>
-                                <p class='preco-anterior'>de R$XX,XXXX</p>
+                                <p class='preco-anterior'>de R$499,99</p>
                             </div>
 
                             <h4 class='preco-atual'>
@@ -410,7 +408,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container">
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -446,7 +444,7 @@
                             </div>
 
                             <div>
-                                <p class='preco-anterior'>de R$XX,XXXX</p>
+                                <p class='preco-anterior'>de R$499,99</p>
                             </div>
 
                             <h4 class='preco-atual'>
@@ -456,7 +454,7 @@
                                 <p class='parcelamento'>ou em 3x de R$ 133,00</p>
                             </div>
 
-                            <div class="botao-container flex-center-items">
+                            <div class="botao-container" >
                                 <button class="botao-comprar botao" type="">
                                     <i class="material-icons">shopping_cart</i>
                                     <span><h3>Comprar</h3></span>
@@ -477,8 +475,8 @@
                 <img src="imagens/hline.svg" />
             </div>
         </div>
-        <div class="headline informacoes-container flex-center-items">
-            <div class="endereco grow-2">
+        <div class="headline informacoes-container">
+            <div class="endereco">
                 <div class="margin-right-4">
                     <h4 class="cidade">São Paulo</h4>
                     <p class="rua">Rua do Rócio, 423/1801</p>
@@ -495,25 +493,25 @@
                 </div>
             </div>
                 
-                <div class="contato grow-2 ">
+                <div class="contato ">
                     <div>
-                        <button class="botao button-contato botao-container flex-center-items">
+                        <button class="botao button-contato botao-container">
                             <i class="material-icons">mail</i> 
                             <span><p>ENTRE EM CONTATO</p></span>
                         </button>
                     </div>
 
                     <div>
-                        <button class="botao button-contato botao-container flex-center-items">
+                        <button class="botao button-contato botao-container">
                             <i class="material-icons">headset_mic</i> 
                             <span><p>FALE COM O NOSSO CONSULTOR ONLINE</p></span>
                         </button>
                     </div>
 
                 </div>
-                <div class="parceiros grow">
+                <div class="parceiros">
                     <div class="ecan-rodape-logo">
-                        <p class="created">Created by</p>
+                        <p class="createdby">Created by</p>
                         <img src="./imagens/ecan.svg" />
                     </div>
                     <div>
