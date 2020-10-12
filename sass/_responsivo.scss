@@ -13,59 +13,77 @@
         width: $widht-items-sm;
     }
     .caixa-pesquisa{
-        min-width: $width-pesquisa-md;
+        width: $width-pesquisa-md;
     }
 }
 
-@media (max-width: 850px){
+@media (max-width: 1024px) 
+{
+    #conta, #idiomas, #separador{
+        display:none;
+    }
+    .header{
+        max-width: 98%;
+    }
+    .hamburguer-menu{
+        display: flex;
+        align-items: center;
+    }
+    
+    .headline{
+        padding:0px;
+    }
+    #search{
+        order: 1;
+        margin: auto;
+    }
+    .caixa-pesquisa{
+        min-width: 800px;
+    }
+    .banner-container{
+        background-size: cover;
+    }
+    .banner{
+        width: 92%;
+    }
+    
+    .informacoes-container{
+        flex-direction: column;
+    }
+    
+    .endereco{
+        align-self: start;
+    }
+    
+    .contato{
+        @include mix-flex(inherit, space-around, nowrap, 2);
+        flex-direction: column;
+    }
+    
+    .parceiros{
+        align-self: center;
+    }
+
+    .prateleira{
+        width: 100%;
+    }
+}
+
+@media (max-width: 820px){
     .prateleira{
         padding:0 12px;
     }
     .caixa-pesquisa{
-        min-width: $width-pesquisa-lg;
+        min-width: 600px;
     }
     .contato{
         @include mix-flex(inherit, space-around, nowrap, 3);
         align-items: flex-end;
 
     }
-    
-
-}
-@media (max-width: 1024px) 
-{
-    #conta, #idiomas, #separador{
-        display:none;
-    }
-    .banner-container{
-        background-size: cover;
-    }
-    .hamburguer-menu{
-        display: flex;
-        align-items: center;
-    }
-    .caixa-pesquisa{
-        min-width: $width-pesquisa-md;
-    }
-    .informacoes-container{
-        flex-direction: column;
-    }
-    .endereco{
-        align-self: start;
-    }
-    .contato{
-        @include mix-flex(inherit, space-around, nowrap, 2);
-        flex-direction: column;
-    }
-    .parceiros{
-        align-self: center;
-    }
 }
 @media (max-width: 600px) 
 {   
-    #search{
-        order: 1;
-    }
     .caixa-pesquisa{
         min-width: $width-pesquisa-lg;
     }
@@ -74,6 +92,6 @@
 @media (max-width: 480px) 
 {   
     .caixa-pesquisa{
-        min-width: $width-pesquisa-md;
+        min-width: 250px;
     }
 }

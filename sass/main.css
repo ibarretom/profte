@@ -26,8 +26,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-flex: 0;
@@ -36,6 +37,10 @@
   margin: 0 auto;
   max-width: 90%;
   height: 80px;
+}
+
+.header i {
+  font-size: 32px;
 }
 
 .hamburguer-menu {
@@ -54,6 +59,7 @@
       -ms-flex-positive: 0;
           flex-grow: 0;
   display: none;
+  cursor: pointer;
 }
 
 .account-cart-lang {
@@ -474,34 +480,7 @@
     width: 190px;
   }
   .caixa-pesquisa {
-    min-width: 300px;
-  }
-}
-
-@media (max-width: 850px) {
-  .prateleira {
-    padding: 0 12px;
-  }
-  .caixa-pesquisa {
-    min-width: 450px;
-  }
-  .contato {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: inherit;
-        -ms-flex-align: inherit;
-            align-items: inherit;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-flex: 3;
-        -ms-flex-positive: 3;
-            flex-grow: 3;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    width: 300px;
   }
 }
 
@@ -509,8 +488,8 @@
   #conta, #idiomas, #separador {
     display: none;
   }
-  .banner-container {
-    background-size: cover;
+  .header {
+    max-width: 98%;
   }
   .hamburguer-menu {
     display: -webkit-box;
@@ -520,8 +499,23 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .headline {
+    padding: 0px;
+  }
+  #search {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: auto;
+  }
   .caixa-pesquisa {
-    min-width: 300px;
+    min-width: 800px;
+  }
+  .banner-container {
+    background-size: cover;
+  }
+  .banner {
+    width: 92%;
   }
   .informacoes-container {
     -webkit-box-orient: vertical;
@@ -558,14 +552,39 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .prateleira {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .prateleira {
+    padding: 0 12px;
+  }
+  .caixa-pesquisa {
+    min-width: 600px;
+  }
+  .contato {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 @media (max-width: 600px) {
-  #search {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
   .caixa-pesquisa {
     min-width: 450px;
   }
@@ -573,7 +592,7 @@
 
 @media (max-width: 480px) {
   .caixa-pesquisa {
-    min-width: 300px;
+    min-width: 250px;
   }
 }
 /*# sourceMappingURL=main.css.map */

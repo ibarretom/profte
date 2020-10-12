@@ -1,13 +1,18 @@
 .header{
-    @include mix-flex(center, space-around, wrap, 0);
+    @include mix-flex(center, space-between, wrap, 0);
     margin: 0 auto;
     max-width: $content-size-lg;
     height: 80px;
+
+    i{
+        font-size: 32px;
+    }
 }
 
 .hamburguer-menu{
     @include mix-flex(center, center, nowrap, 0);
     display:none;
+    cursor: pointer;
 }
 
 .account-cart-lang{
