@@ -1,0 +1,70 @@
+@media (max-width: 1100px){
+
+    .header{
+        width: content-size;
+    }
+    .account-cart-lang{
+        margin:0 4px;
+    }
+    .bandeira{
+        margin: 0 4px;
+    }
+    .item{
+        width: $widht-items-sm;
+    }
+    .caixa-pesquisa{
+        min-width: $width-pesquisa-md;
+    }
+}
+
+@media (max-width: 850px){
+    .prateleira{
+        padding:0 12px;
+    }
+    .caixa-pesquisa{
+        min-width: $width-pesquisa-lg;
+    }
+    #search{
+        order: 1;
+    }
+    .contato{
+        @include mix-flex(inherit, space-around, nowrap, 3);
+        align-items: flex-end;
+
+    }
+    
+
+}
+@media (max-width: 600px) 
+{
+    #conta, #idiomas, #separador{
+        display:none;
+    }
+    .banner-container{
+        background-size: cover;
+    }
+    .hamburguer-menu{
+        display: flex;
+        align-items: center;
+    }
+    .caixa-pesquisa{
+        min-width: $width-pesquisa-md;
+    }
+    .informacoes-container{
+        flex-direction: column;
+    }
+    .contato{
+        @include mix-flex(inherit, space-around, nowrap, 2);
+        flex-direction: column;
+    }
+    .parceiros{
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) 
+{   
+    .caixa-pesquisa{
+        min-width: $width-pesquisa-md;
+    }
+}

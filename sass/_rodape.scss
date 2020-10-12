@@ -1,0 +1,45 @@
+.rodape-container{
+    padding-top: $margin-between-containers;
+    background: $bg-primary-color;
+    color: $color-neutro;
+}
+
+.informacoes-container{
+    @include mix-flex(center,space-between,wrap,0);
+    margin-top: 16px;
+}
+.endereco{
+    @include mix-flex(center, start, nowrap,2);
+    
+    p, h4{
+        margin-top: 4px;
+    }
+    div{
+        margin-right: 16px;
+    }
+}
+
+.contato{
+    @include mix-flex(center, space-between, nowrap,2);
+    flex-direction: column;
+    margin-top: 12px;
+    div{
+        margin: auto; 
+    }
+}
+
+.parceiros{
+    @include mix-flex(center, space-evenly, nowrap, 1);
+    align-self: flex-end;
+    font-size: 10.6px;
+    margin-top: 12px;
+}
+.createdby{
+    margin-bottom:4px;
+}
+
+.detalhe{
+    margin-top: 4px;
+    height: 12px;
+    background-color: $secondary-color;
+}

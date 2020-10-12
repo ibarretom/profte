@@ -1,0 +1,39 @@
+.header{
+    @include mix-flex(center, space-around, wrap, 0);
+    margin: 0 auto;
+    max-width: $content-size-lg;
+    height: 80px;
+}
+
+.hamburguer-menu{
+    @include mix-flex(center, center, nowrap, 0);
+    display:none;
+}
+
+.account-cart-lang{
+    @include mix-flex(center, space-between, nowrap, 0);
+    margin:8px;
+}
+.minha-conta{
+    @include mix-flex(center, sapce-evenly, nowrap, 0)
+}
+.caixa-pesquisa{
+    min-width: $width-pesquisa-lg;
+    height: $height-pesquisa;
+    border: none;
+    border-bottom: 1px solid;
+    background: url("../imagens/search-24px.svg") no-repeat right center;
+}
+
+.contador-items{
+    @include mix-flex(center, space-around, wrap, 0);
+    color: $color-neutro;
+    background-color: $secondary-color;
+    @include icone-size(24px, 24px);
+    border-radius: 100%;
+    justify-content: space-around;
+}
+
+.bandeira{
+    margin:8px;
+}

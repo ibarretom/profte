@@ -1,0 +1,11 @@
+@mixin mix-flex($align-items, $justify-content, $wrap, $grow,) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-wrap: $wrap;
+    flex-grow: $grow;
+}
+@mixin icone-size($widht, $height){
+    width: $widht;
+    height: $height;
+}
