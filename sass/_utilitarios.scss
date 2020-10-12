@@ -5,8 +5,6 @@
 }
 .botao-container{
    @include mix-flex(center, space-evenly, nowrap,0);
-   outline: none;
-   outline-style: none;
 }
 .botao{
     color: $color-neutro;
