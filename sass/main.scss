@@ -1,3 +1,4 @@
+@import 'constantes';
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,6 @@
     outline: none;
     outline-style: none;
 }
-@import 'constantes';
 @import 'mixins';
 @import 'header';
 @import 'utilitarios';

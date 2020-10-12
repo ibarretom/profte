@@ -9,77 +9,14 @@
 /*Prateleira*/
 /*items*/
 /*botao*/
-.headline {
-  margin: 0 auto;
-  padding: 0 7.5%;
-  width: 90%;
-}
-
-.botao-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
-.botao {
-  color: white;
-  margin-top: 8px;
-  border: none;
-  border-radius: 5px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.botao-comprar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  display: none;
-  width: 125.28px;
-  height: 32.42px;
-  background: #2EC4B6;
-  font-size: 12px;
-  text-align: center;
-}
-
-.button-contato, .button-contato:hover {
-  width: 195px;
-  height: 38px;
-  background: #FF9F1C;
-  font-weight: 500;
-  font-size: 11.82px;
-}
-
-.button-contato p, .button-contato:hover p {
-  width: 120px;
-}
-
-.flag {
-  background: transparent url("./../imagens/Flag.png") no-repeat top right;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  outline-style: none;
 }
 
 .header {
@@ -186,6 +123,79 @@
 
 .bandeira {
   margin: 8px;
+}
+
+.headline {
+  margin: 0 auto;
+  padding: 0 7.5%;
+  width: 90%;
+}
+
+.botao-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.botao {
+  color: white;
+  margin-top: 8px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.botao-comprar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  display: none;
+  width: 125.28px;
+  height: 32.42px;
+  background: #2EC4B6;
+  font-size: 12px;
+  text-align: center;
+}
+
+.button-contato, .button-contato:hover {
+  width: 195px;
+  height: 38px;
+  background: #FF9F1C;
+  font-weight: 500;
+  font-size: 11.82px;
+}
+
+.button-contato p, .button-contato:hover p {
+  width: 120px;
+}
+
+.flag {
+  background: transparent url("./../imagens/Flag.png") no-repeat top right;
 }
 
 .banner-container {
@@ -453,79 +463,6 @@
   background-color: #2EC4B6;
 }
 
-.headline {
-  margin: 0 auto;
-  padding: 0 7.5%;
-  width: 90%;
-}
-
-.botao-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
-.botao {
-  color: white;
-  margin-top: 8px;
-  border: none;
-  border-radius: 5px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.botao-comprar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  display: none;
-  width: 125.28px;
-  height: 32.42px;
-  background: #2EC4B6;
-  font-size: 12px;
-  text-align: center;
-}
-
-.button-contato, .button-contato:hover {
-  width: 195px;
-  height: 38px;
-  background: #FF9F1C;
-  font-weight: 500;
-  font-size: 11.82px;
-}
-
-.button-contato p, .button-contato:hover p {
-  width: 120px;
-}
-
-.flag {
-  background: transparent url("./../imagens/Flag.png") no-repeat top right;
-}
-
 @media (max-width: 1100px) {
   .header {
     width: content-size;
@@ -641,15 +578,5 @@
   .caixa-pesquisa {
     min-width: 300px;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Ubuntu", Helvetica, sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: none;
-  outline-style: none;
 }
 /*# sourceMappingURL=main.css.map */
