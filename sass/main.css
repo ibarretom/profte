@@ -348,6 +348,8 @@
   padding-top: 25px;
   background: #011627;
   color: white;
+  position: absolute;
+  width: 100%;
 }
 
 .informacoes-container {
