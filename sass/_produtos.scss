@@ -27,10 +27,12 @@
     width: $widht-items;
     height: $height-items;
     position: relative;
+    outline: none;
 
     &:hover{
         background: $item-hover-color;
         border: $border-items-size solid item-hover-color;
+        outline: none;
     }
     &:hover .botao-comprar{
         display: flex;
