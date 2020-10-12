@@ -39,6 +39,10 @@
   height: 80px;
 }
 
+.header i {
+  font-size: 40px;
+}
+
 .hamburguer-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,9 +490,6 @@
   }
   .header {
     max-width: 98%;
-  }
-  .header i {
-    font-size: 40px;
   }
   .hamburguer-menu {
     display: -webkit-box;
