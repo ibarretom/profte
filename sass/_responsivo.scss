@@ -24,9 +24,6 @@
     .caixa-pesquisa{
         min-width: $width-pesquisa-lg;
     }
-    #search{
-        order: 1;
-    }
     .contato{
         @include mix-flex(inherit, space-around, nowrap, 3);
         align-items: flex-end;
@@ -35,7 +32,7 @@
     
 
 }
-@media (max-width: 600px) 
+@media (max-width: 1024px) 
 {
     #conta, #idiomas, #separador{
         display:none;
@@ -53,12 +50,24 @@
     .informacoes-container{
         flex-direction: column;
     }
+    .endereco{
+        align-self: start;
+    }
     .contato{
         @include mix-flex(inherit, space-around, nowrap, 2);
         flex-direction: column;
     }
     .parceiros{
         align-self: center;
+    }
+}
+@media (max-width: 600px) 
+{   
+    #search{
+        order: 1;
+    }
+    .caixa-pesquisa{
+        min-width: $width-pesquisa-lg;
     }
 }
 

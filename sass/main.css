@@ -268,11 +268,13 @@
   width: 216px;
   height: 353px;
   position: relative;
+  outline: none;
 }
 
 .item:hover {
   background: #F2F2F2;
   border: 1.44041px solid item-hover-color;
+  outline: none;
 }
 
 .item:hover .botao-comprar {
@@ -546,11 +548,6 @@
   .caixa-pesquisa {
     min-width: 450px;
   }
-  #search {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
   .contato {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -571,7 +568,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   #conta, #idiomas, #separador {
     display: none;
   }
@@ -594,6 +591,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .endereco {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   .contato {
     display: -webkit-box;
@@ -618,6 +620,17 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #search {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .caixa-pesquisa {
+    min-width: 450px;
   }
 }
 
