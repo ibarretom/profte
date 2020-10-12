@@ -40,7 +40,6 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   text-transform: uppercase;
-  outline: none;
   cursor: pointer;
 }
 
@@ -482,7 +481,6 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   text-transform: uppercase;
-  outline: none;
   cursor: pointer;
 }
 
@@ -649,5 +647,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
+  outline-style: none;
 }
 /*# sourceMappingURL=main.css.map */
