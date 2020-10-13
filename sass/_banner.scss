@@ -1,13 +1,13 @@
 .banner-container{
     background: $bg-primary-color url("../imagens/Banner.png") no-repeat right;
     background-size: $bg-banner-widht $bg-banner-height;
-    height: $banner-height; 
+    height: 25rem; 
     position: relative;
 }
 
 .banner{
     width: $banner-widht;
-    height: $banner-container-height;
+    height: $banner-height;
     margin: auto;
     @include mix-flex(center, space-between, wrap, 0);
 }

@@ -38,7 +38,7 @@
         display: flex;
     }
     &:hover.flag{
-        background: transparent url("./../imagens/Flag.png") no-repeat top right;
+        background: $item-hover-color url("./../imagens/Flag.png") no-repeat top right;
     }
 }
 

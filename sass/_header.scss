@@ -4,9 +4,6 @@
     max-width: $content-size-lg;
     height: 80px;
 
-    i{
-        font-size: 40px;
-    }
 }
 
 .hamburguer-menu{
@@ -20,7 +17,7 @@
     margin:8px;
 }
 .minha-conta{
-    @include mix-flex(center, sapce-evenly, nowrap, 0)
+    @include mix-flex(center, space-evenly, nowrap, 0)
 }
 .caixa-pesquisa{
     min-width: $width-pesquisa-lg;

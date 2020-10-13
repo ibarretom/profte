@@ -1,0 +1,158 @@
+@media (max-width: 1024px){
+    
+    *{
+        body {font: 100%}
+
+
+        div {
+            font-size: 1.88rem;
+        }
+        
+        h1 {
+            font-size: 5.0rem;
+        }
+        h2{
+            font-size: 4.0rem;
+        }
+        h3{
+            font-size: 3.0rem;
+        }
+        h4{
+            font-size: 2.5rem;
+        }
+        h5{
+            font-size: 2.0rem;
+        }
+        p {
+            font-size: 0.75rem;
+        }
+    }
+    
+    
+    .header{
+        @include mix-flex(center, space-between, wrap, 0);
+        margin: 0 auto;
+        max-width: 100%;
+        height: 20rem;
+        #logo img{
+            width: 14rem;
+        }
+        .contador-items{
+            display: none;
+        }
+        i{
+            font-size: 4.5rem;
+            color: grey
+        }
+
+        #search{
+            input{
+                height: 6rem;
+                text-justify: center;
+                font-size: 2.5rem;
+                background-size: 2.0em;
+            }
+        }
+    }
+
+    .banner-container{
+        height: 50rem;
+        margin-bottom: 6rem;
+        img{
+            width: 5em;
+        }
+    }
+
+    .prateleira-container{
+        height: 45rem;
+        margin-bottom: 6rem;
+        h4{
+            font-size: 2.5rem;
+        }
+        .item{
+            height: 40rem;
+        }
+        .imagem-vitrine{
+            margin: 0 auto;
+            margin-top: 3rem;
+            width: 100%;
+            height: 15rem;
+        
+            img{
+                height: 100%;
+            }
+        }
+
+        .titulo-produto{
+            font-weight: 500;
+        }
+        .like{
+            i{
+                font-size: 2.5rem;
+            }
+
+        }
+        .preco-anterior{
+            font-size: 1.8rem;
+        }
+        .parcelamento{
+            font-size: 1.6rem
+        }
+    }
+    
+    .botao{
+        border-radius: 1rem;
+    }
+    
+    .botao-comprar{
+        width: 20rem;
+        height: 5rem;
+        h3{
+            font-size: 2rem;
+        }
+        i{
+            font-size: 4rem;
+        }
+    }
+    .rodape-container{
+        .headline{
+            .endereco{
+                p{
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+
+    .button-contato, .button-contato:hover{
+        width: 32rem;
+        height: 5rem;
+        background: $primary-color;
+        font-weight: 500;
+        
+        p{
+            font-size: 1.7rem;
+            width: 23rem;
+        }
+        i{
+            font-size: 3rem;
+        }
+    }
+
+    .parceiros{
+        margin-top: 2em;
+        .ecan-rodape-logo{
+            margin-right: 4rem;
+            p{
+                font-size: 1.9rem;
+            }
+
+            .createdby{
+                margin-bottom: 0.7rem;
+            }
+        }
+        img{
+            width: 10rem
+        }
+    }
+}
